@@ -27,28 +27,29 @@
 </head>
 <body>
  <header>
-       <div class="logo"><i class="fa fa-ul fa-cutlery"></i> </div>	  <!-- 使用font-awesome字体 --> 
+      
     </header>  
 	<p align="center">
-		<img src="images/xiaohui.jpg" height="200px" width="200px" />
+		<img src="images/xiaohui.png" height="200px" width="200px" />
 	<h1 align="center">中央民族大学学生管理系统</h1>
 	<p> 
-	 <s:form action="customer/customer_login" method="post" cssClass="login">
+	 <s:form action="Login" method="post" cssClass="login"theme="simple">
 		<div class="form-group">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text"  style="text-align:center;width:150px;"name=admin.name" class="form-control" placeholder="请输入用户名">
+                <input type="text"  style="text-align:center;width:150px;"name="admin.name" class="form-control" placeholder="请输入用户名">
               </div>
               <s:fielderror fieldName="admin.name" cssClass="fielderror"/> <!--出错的输入域 -->
                <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                <input type="password" name="customer.password" style="text-align:center;width:150px; "class="form-control" placeholder="请输入密码">
+                <input name="admin.password" type="password"class="form-control" id="admin.password" placeholder="请输入密码" style="text-align:center;width:150px; ">
                </div>
-              <s:fielderror fieldName="customer.password" cssClass="fielderror"/>
+              <s:fielderror fieldName="admin.password" cssClass="fielderror"/>
           </div>
 	      <button type="submit" class="btn btn-success btn-sm">登 录 </button>
 	    </s:form>
 		<s:fielderror></s:fielderror>
 		<p align="center">Copyright &copy;2016 中央民族大学版权所有
-</body>
+</body>  
+
 </html>

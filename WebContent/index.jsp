@@ -9,7 +9,7 @@
 <body>
 	<center>
 		<p>
-			<img src="images/xiaohui.jpg" height="163px" width="200px" />
+			<img src="images/xiaohui.png" height="163px" width="200px" />
 		<h1>中央民族大学学生管理系统</h1>
 		<p>
 			<a href="addStudent.jsp">新增学生信息</a> <a href="ViewStudents.action">显示学生信息</a>

@@ -1,5 +1,8 @@
 package action;
 
+import javax.persistence.FetchType;
+import javax.persistence.ManyToOne;
+
 import service.AdminService;
 import bean.Admin;
 import com.opensymphony.xwork2.ActionContext;
@@ -24,7 +27,8 @@ public class Login extends ActionSupport {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-
+	@ManyToOne(fetch = FetchType.EAGER)
+	
 	public Admin getAdmin() {
 		return admin;
 	}
@@ -53,10 +57,10 @@ public class Login extends ActionSupport {
 	public void validate() {
 		// TODO Auto-generated method stub
 		if (null == admin.getName() || "".equals(admin.getName())) {
-			addFieldError("admin.name", "ÇëÊäÈëµÇÂ¼Ãû");
+			addFieldError("admin.name", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½");
 		}
 		if (null == admin.getPassword() || "".equals(admin.getPassword())) {
-			addFieldError("admin.password", "ÇëÊäÈëÃÜÂë");
+			addFieldError("admin.password", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 
